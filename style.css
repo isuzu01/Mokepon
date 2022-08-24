@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka&family=Fredoka+One&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Arimo&family=Luckiest+Guy&display=swap'); */
+
+body{
+  font-family: 'Fredoka', sans-serif;
+  /* font-family: 'Arimo', sans-serif; */
+  background: skyblue;
+  background-image: url("img/background.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0px;
+  color: white;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  box-sizing: content-box;
+}
+
+input {
+  display: none;
+}
+
+img {
+  width: 9rem;
+  height: 10rem;
+}
+
+h1 {
+  font-family: 'Fredoka One', cursive;
+  font-size: 4rem;
+  margin: 2px 0 10px 0;
+  position: absolute;
+  color: white;
+  z-index: 10;
+  top: 5px;
+  left: 50%;
+  transform: translate(-50%, -0.5rem);
+  text-shadow: -5px 5px 5px  black;
+}
+
+h2 {
+  text-align: center;
+  margin: 10px auto 0;
+  width: 100%;
+  text-shadow: -5px 5px 5px  black;
+}
+h3 {
+  margin: auto;
+}
+input:checked + label {
+  background-color: yellowgreen;
+  height: 215px;
+  width: 160px;
+  animation: mymove 2s infinite;
+}
+
+@keyframes mymove {
+  50% {box-shadow: 1px 1px 20px 6px white;}
+}
+
+#big-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 635px;
+  width: fit-content;
+  position: relative;
+}
+
+.contenedor {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 550px;
+  width: fit-content;
+  background-color: rgba(130, 159, 255, 0.425);
+  border: 10px solid white;
+  border-radius: 40px;
+  box-sizing: content-box;
+  
+}
+
+/* ----------------- MOKEPONES-------------- */
+
+.tarjetas {
+  display: flex;
+  padding: 10px;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.tarjeta-mokepon {
+  display:flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items:center;
+  height: 200px;
+  width: 150px;
+  background-color: cornflowerblue;
+  padding:5px;
+  margin: 10px;
+  box-sizing:border-box;
+  border: 5px solid white;
+  border-radius:20px;
+} 
+
+
+.title {
+  font-size:  30px;
+}
+
+.boton {
+  color: white;
+  width: 13rem;
+  height: 3rem;
+  font-size: 1.5rem;
+  border-radius: 15px;
+  background-color: rgba(255, 255, 255, 0);
+  border: 5px solid rgb(255, 255, 255);
+}
+.boton:active {
+  background-color: yellowgreen;
+  box-shadow: 0 5px rgb(236, 230, 230);
+  transform: translateY(4px);
+}
+
+.seleccionar {
+  position: relative;
+  bottom: -10%;
+}
+
+/* --------------------ATAQUES--------------------- */
+.botones-ataque {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+}
+
+.boton-ataque {
+  margin: 0 10px 0 10px;
+  width: 5rem;
+  border: 3px solid white;
+  height: 3rem;
+}
+
+.boton-ataque:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+#boton-fuego:hover {
+  background-color: orange;
+}
+#boton-agua:hover {
+  background-color: skyblue;
+}
+#boton-tierra:hover {
+  background-color: yellowgreen;
+}
+
+
+.mensaje-final {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  height: 90vh;
+  margin: 0 5px 20px 5px;
+  position: relative;
+  align-items: center;
+  
+}
+
+.mensaje {
+  display: flex;
+  flex-flow: column;
+  flex-direction: column;
+  height: 6rem;
+  width: 100%;
+  box-sizing: content-box;
+  font-size: 1rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 30px;
+
+
+}
+
+.mensaje p {
+  font-size: 2rem;
+  display: inline-flex;
+  margin: 5px 5px;
+  width: 100%;
+  box-sizing: border-box;
+  justify-content: center;
+  background-color: rgba(240, 248, 255, 0.362);
+}
+
+
+/* -----------------botn reiniciar---------------- */
+
+.boton-reiniciar {
+  height: 40px;
+  border: 4px solid;
+  margin-top: 5px;
+}
+
+.contenedor-ataques {
+  text-align: center;
+  display: grid;
+  grid-template-columns: 200px 200px;
+  column-gap: 50px;
+  height: 260px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+}
+.ataque {
+  background-color: yellowgreen;
+  border: 7px solid white;
+  border-radius: 15px;
+  width: 200px;
+  height: 230px;
+  padding-top: 10px;
+}
+.ataque p {
+  margin: 10px 0 0 0;
+}
+
+.botones-ataque {
+  margin: 10px 0 15px 0;
+}
+
+.ataque-mascota  {
+  margin-top: 0;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+
+
+@media (max-width: 500px) {
+ /*  html {
+    display: flex;
+    flex-wrap: wrap;
+  } */
+  input:checked + label {
+    width: 260px;
+    height: 110px;
+  }
+  
+  body {
+    background-size: cover;
+  }
+  #big-container {
+    width: 97%;
+    height: 97%;
+  }
+  .contenedor {
+    height: 90%;
+    width: 90%;
+    border: 6px solid;
+  }
+  .tarjetas {
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 50vh;
+  }
+  .tarjeta-mokepon {
+    flex-direction: row;
+    width: 250px;
+    height: 90px;
+    justify-content: space-between;
+    margin: 3px auto;
+    border: 3px solid;
+  }
+  img {
+    width: 80px;
+    height: 80px;
+  }
+  .title {
+    width: 300px;
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 20px;
+  }
+  h1 {
+    font-size: 3.2rem;
+    left: 19%;
+  }
+
+  
+  .contenedor-ataques {
+    justify-items: center;
+    width: 100%;
+    margin: 3% 0;
+    grid-template-columns: 150px 150px;
+    gap: 25px;
+  }
+  .ataque {
+    width: 150px;
+  }
+  .boton-ataque {
+    font-size: 0.9rem;
+  }
+}
